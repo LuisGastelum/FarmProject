@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Triguíto's Corp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind + DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      daisyui: {
+        themes: ["light"],
+      },
+    }
+  </script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css"
+    rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-base-200">
+
+<div class="flex min-h-screen">
+
+  <!-- FONDO IZQUIERDO -->
+  <div
+    class="hidden lg:block w-1/6 bg-cover bg-center"
+    style="background-image: url('https://i.imgur.com/VQZ9K4p.jpeg');">
+  </div>
+
+  <!-- CONTENIDO CENTRAL -->
+  <div class="flex-1 bg-[#fff7ed]">
+
+    <!-- NAVBAR -->
+    <div class="navbar bg-green-300 px-6">
+      <div class="flex-1 gap-4">
+
+        <button class="btn btn-circle btn-sm bg-white">🏠</button>
+
+        <button class="btn btn-sm bg-white text-green-700">
+          Cultivos
+        </button>
+
+        <button class="btn btn-sm bg-white text-green-700">
+          Servicios Agrícolas
+        </button>
+
+        <button class="btn btn-sm bg-white text-green-700">
+          Empleados
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="p-10">
+
+      <!-- TÍTULO -->
+      <h1 class="text-3xl font-bold text-green-700 text-center mb-12">
+        Triguito's Corp™ 🌾
+      </h1>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+        <!-- TEXTO IZQUIERDA -->
+        <div class="text-lg space-y-4 text-[#4b2e1f]">
+          <p>
+            ¿ <span class="text-orange-500 font-semibold">Info</span> ?
+          </p>
+          <p>
+            más informacion
+          </p>
+        </div>
+
+        <!-- IMAGEN DERECHA -->
+        <div class="flex flex-col items-center">
+          <div class="border-4 border-green-600 rounded-lg overflow-hidden">
+            <img
+              src="https://i.imgur.com/JkqR9pB.jpeg"
+              alt="Cultivo"
+              class="max-w-full h-auto">
+          </div>
+          <p class="mt-4 text-[#4b2e1f]">
+            aún mas info
+          </p>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FONDO DERECHO -->
+  <div
+    class="hidden lg:block w-1/6 bg-cover bg-center"
+    style="background-image: url('https://i.imgur.com/VQZ9K4p.jpeg');">
+  </div>
+
+</div>
+
+</body>
+</html>
