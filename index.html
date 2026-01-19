@@ -9,9 +9,25 @@
     <!-- DaisyUI + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* 1. Definimos la fuente correctamente */
+        @font-face {
+            font-family: 'Mine';
+            src: url('Minecraft.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* 2. Configuramos el tema de Tailwind v4 */
+        .fuente-minecraft {
+            font-family: "Mine", sans-serif !important;
+        }
+        /* 3. Aplicación global forzosa para todos los elementos */
+
+    </style>
 </head>
 
-<body class="bg-base-200">
+<body class="bg-base-200 font-display fuente-minecraft">
 
     <!-- HEADER -->
     <header class="relative text-center py-10">
@@ -25,7 +41,7 @@
         </div>
 
         <!-- Título -->
-        <h1 class="text-4xl font-bold text-green-600 flex justify-center items-center gap-2">
+        <h1 class="text-4xl text-green-600 flex justify-center items-center gap-2">
             Triguito's Corp™
             <span>🌾</span>
         </h1>
@@ -186,6 +202,12 @@
     <!-- FOOTER -->
     <footer class="fixed bottom-0 left-0 w-full p-3 bg-green-800 text-white text-center text-xs z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.1)]">
         &copy; 2024 Triguito's Corp™ - Todos los derechos reservados.
+       <!--
+       <div class="flex items-center justify-between space-x-2">
+            <div class="bg-opacity-25 bg-gray-950 pl-2 "><pre> /give @s minecraft:wheat 64                                              </pre></div>
+            <button class="btn text-gray-950 mr-300"><kbd class="kbd">↵</kbd></button>
+        </div>
+       -->
     </footer>
 
 </body>
