@@ -14,3 +14,4 @@ Sprint 1:
 se ocupa en el sprint de esta semana tener un diseño plantilla general, tomar desición de las herramiengtas que se usaran y 
 
 Sprint 2:
+![Uploading image.png…]()
